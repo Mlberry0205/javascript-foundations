@@ -8,9 +8,12 @@ describe('Unicorn', function() {
   });
 
   it('should instantiate our good friend, Unicorn', function() {
-    var unicorn = new Unicorn();
 
+    var unicorn = new Unicorn();
+ //lowercase unicorn is an object
     assert.instanceOf(unicorn, Unicorn);
+    //assert is our assertion library.  It has the equal method on it.
+    //then some sort of actual code
   });
 
   it('should have a name', function() {
@@ -23,30 +26,42 @@ describe('Unicorn', function() {
     var unicorn = new Unicorn('Pam');
 
     assert.equal(unicorn.name, 'Pam');
+    //assert that unicorn name is going to equal Bree
   });
 
   it('should have a color', function() {
     var unicorn = new Unicorn('TayTay', 'blue');
-    
+    //there is now an extra argument being passed here (a color)
     assert.equal(unicorn.color, 'blue');
+    //assert that unicorn will have the color blue
   });
 
-  it.skip('should be white as default', function() {
+  it('should be white as default', function() {
     var unicorn = new Unicorn('Louisa');
 
     assert.equal(unicorn.color, 'white');
+    //asserting that unicorn has a color property and the color is the string is White
+
   });
 
-  it.skip('should refute isWhite', function() {
+  it('should refute isWhite', function() {
     var unicorn = new Unicorn('Steve', 'red');
-
+    //we are creating a new variable (new Unicorn) thats name is
+    //Steve and is red.
     assert.equal(unicorn.isWhite(), false);
+    //asserting unicorn is white and invoking a function.
+    //unicorn iswhite is not a function (it does not exist)
+    //create the function
   });
 
-  it.skip('should say sparklying stuff', function() {
+  it('should say sparklying stuff', function() {
     var unicorn = new Unicorn('Brenna');
-    
+
     assert.equal(unicorn.says('Wonderful!'), '**;* Wonderful! *;**');
     assert.equal(unicorn.says('Batman has a great smile'), '**;* Batman has a great smile *;**');
+    // invoking .says method.  passing in 1 argument into method
+    // make sure our method is set up with 1 parameter.
+    // when we call this method w/wonderful, add sparkly characters
+    //around arguement
   });
 });
