@@ -2,11 +2,11 @@
 
 class Hobbit {
   constructor(name, age, adult) {
-    this.name = name.name
-    this.age = 0
-    this.adult = false
-    this.old = false
-    this.hasRing = false
+    this.name = name.name;
+    this.age = 0;
+    this.adult = false;
+    this.old = false;
+    this.hasRing = false;
 
   }
   celebrateBirthday() {

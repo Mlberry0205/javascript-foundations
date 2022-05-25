@@ -5,11 +5,11 @@ var Statue = require('../exercises/statue');
 
 describe('Medusa', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Medusa);
   });
 
-  it.skip('should instantiate our good friend, Medusa', function() {
+  it('should instantiate our good friend, Medusa', function() {
     var medusa = new Medusa();
 
     assert.instanceOf(medusa, Medusa);
@@ -128,17 +128,17 @@ describe('Medusa', function() {
 });
 
 describe('Person', function() {
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Person);
   });
 
-  it.skip('should instantiate our good friend, Person', function() {
+  it('should instantiate our good friend, Person', function() {
     var person = new Person();
 
     assert.instanceOf(person, Person);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var scott = new Person('Scott');
     var eric = new Person('Eric');
 
@@ -146,7 +146,7 @@ describe('Person', function() {
     assert.equal(eric.name, 'Eric');
   });
 
-  it.skip('should feel frightened', function() {
+  it('should feel frightened', function() {
     var hannah = new Person('Hannah');
 
     assert.equal(hannah.mood, 'frightened');
